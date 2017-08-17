@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="pomodoro.css">
+    <script src="https://use.fontawesome.com/034bc9a77b.js"></script>
+</head>
+<body>
+    <div id="pomodoro">
+          <h1>Pomodoro Clock</h1>
+          <hr/>
+          <div class="row time-adjust">
+            <div class="break">
+              <ul class="list-inline">
+                <li>
+                  <a href="#" class="fa fa-minus" id="breakminus"></a>
+                </li>
+                <li>
+                  <p class="breakval"><span id="breakmin"></span>:00</p>
+                </li>
+                <li>
+                  <a href="#" class="fa fa-plus" id="breakplus"></a>
+                </li>
+              </ul>
+              <p><b>Break</b></p>
+            </div>
+    
+            <div class="session">
+              <ul class="list-inline">
+                <li>
+                  <a href="#" class="fa fa-minus" id="sessionminus"></a>
+                </li>
+                <li>
+                  <p class="sessionval"><span id="sessionmin"></span>:00</p>
+                </li>
+                <li>
+                  <a href="#" class="fa fa-plus" id="sessionplus"></a>
+                </li>
+              </ul>
+              <p><b>Session</b></p>
+            </div>
+            <div class="timer">
+              <div class="progress"></div>
+              <h1 class="countdown" id='timer'></h1>
+              <h2 id="text"></h2>
+            </div>
+            <div class="row controls">
+              <button class='button' id='start'>start</button>
+              <button class='button' id='pause'>pause</button>
+              <button class='button' id='reset'>reset</button>
+              <button class='button' id='startBreak'>start</button>
+              <button class='button' id='pauseBreak'>pause</button>
+              <button class='button' id='resetBreak'>reset</button>
+            </div>
+          </div>
+      </div>
+      <script src="pomodoro.js"></script>
+</body>
+</html>
